@@ -90,7 +90,7 @@ DFJPEGScaleMake(int numenator, int denominator) {
 
 /*! Returns the scaling factors closest to the input scale. libjpeg-turbo only supports several predefined scaling factors (1/1, 1/2, 1/4 etc).
  @param scale Scale to be apply to the image during decompression.
- @param rounding The rounding mode is a way to specify which predefined scaling factor to pick if the input scale is not on the list.
+ @param roundingMode The rounding mode is a way to specify which predefined scaling factor to pick if the input scale is not on the list.
  */
 + (DFJPEGScale)scalingFactorForScale:(CGFloat)scale roundingMode:(DFJPEGRoundingMode)roundingMode;
 
